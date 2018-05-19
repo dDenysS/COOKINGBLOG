@@ -1,0 +1,23 @@
+.paginations__items {
+  display: flex;
+  justify-content: center;
+}
+
+.paginations__item {
+  margin: 0 7.5px;
+}
+
+.paginations__link {
+  text-decoration: none;
+  color: #a3a4a5;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.45px;
+  padding: 15px 15px 13px;
+  border: 1px solid #a3a4a5;
+
+  &:hover {
+    color: #aa183c;
+    border-color: #aa183c;
+  }
+}

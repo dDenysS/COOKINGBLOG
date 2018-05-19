@@ -1,0 +1,68 @@
+.dishes-cards__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dishes-card {
+  max-width: 378px;
+  margin-right: 18px;
+
+  &:hover {
+    box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.18);
+  }
+
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+.dishes-card__type {
+  color: #aa183c;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.36px;
+  text-align: center;
+}
+
+.dishes-card__title {
+  color: #111519;
+  font-family: "Source Sans Pro","Arial",sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+.dishes-card__date {
+  text-align: center;
+  color: #5e6061;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.33px;
+}
+
+.dishes-card__paragraph {
+  margin: 16px 0;
+  color: #171b1f;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+.dishes-card__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dishes-card__more {
+  color: #605c5a;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.42px;
+}

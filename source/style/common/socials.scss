@@ -1,0 +1,14 @@
+.socials__link {
+  opacity: 0.8;
+  color: #150b04;
+  font-size: 14px;
+  margin-right: 14px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: #aa183c;
+  }
+}

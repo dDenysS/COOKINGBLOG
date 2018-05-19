@@ -1,0 +1,25 @@
+.instagram__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.instagram-card {
+  width: 280px;
+  height: 280px;
+  position: relative;
+
+  &:before {
+    content: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:hover:before {
+    content: "";
+  }
+}
