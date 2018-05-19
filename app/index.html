@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>PreFitness</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Source+Sans+Pro:600" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper container"><a class="logo" href="#">COOKING<span class="logo--dark-red">BLOG</span></a>
+        <button class="header-nav__toggle"><i class="fas fa-bars"></i></button>
+        <nav class="nav">
+          <ul class="nav__items">
+            <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
+            <li class="nav__item dropdown">
+              <button class="dropdown-toggle"><span>Рецепты</span>
+                <div class="fas fa-sort-down"></div>
+              </button>
+              <div class="dropdown-menu"><a class="dropdown-item" href="#">Закуски</a><a class="dropdown-item dropdown" href="#">
+                  <button class="dropdown-toggle">О нас</button>
+                  <div class="dropdown-menu"><a class="dropdown-item nav__link" href="#">Sub Item 1</a><a class="dropdown-item nav__link" href="#">Sub Item 2</a><a class="dropdown-item nav__link" href="#">Sub Item 3</a></div></a><a class="dropdown-item nav__link" href="#">Something else here</a></div>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Кулинарные хитрости</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Обо мне</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <form class="search-form">
+          <input class="search-form__input" type="text" name="search" placeholder="Поиск ...">
+          <div class="socials socials--search-form"><a class="socials__link" href="#"><i class="fab fa-facebook-f"></i></a><a class="socials__link" href="#"><i class="fab fa-vk"></i></a><a class="socials__link" href="#"><i class="fab fa-twitter"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a></div>
+          <div class="search-form__line"></div>
+          <button class="search-form__button" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+    <main class="main">
+      <div class="swiper-container main-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide dishes-slide">
+            <div class="dishes-slide__info">
+              <div class="tag">Десерт</div>
+              <div class="date">Февраль 29, 2017</div>
+              <div class="comments"><i class="fas fa-comments"></i>3</div>
+            </div>
+            <h2 class="dishes-slide__title">Необычный десерт - сыр камамбер с сухофруктами</h2><a class="dishes-slide__more">Подробнее</a>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="main__wrapper container">
+        <div class="content">
+          <section class="dishes-cards">
+            <div class="dishes-cards__wrapper">
+              <div class="dishes-card"><img src="assets/img/dishes-1.jpg" alt="dishes photo">
+                <div class="dishes-card__type">Ужин</div>
+                <h3 class="dishes-card__title">Сырники из творога</h3>
+                <div class="dishes-card__date">
+                  Февраль 29, 2017
+                  |
+                  <div class="coments">0</div>
+                </div>
+                <p class="dishes-card__paragraph">Lorem ipsum dolor amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
+                <div class="dishes-card__links"><a class="dishes-card__more" href="#">Подробнее</a>
+                  <div class="socials"><a class="socials__link" href="#"><i class="fab fa-facebook-f"></i></a><a class="socials__link" href="#"><i class="fab fa-vk"></i></a><a class="socials__link" href="#"><i class="fab fa-twitter"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+              </div>
+              <div class="dishes-card"><img src="assets/img/dishes-2.jpg" alt="dishes photo">
+                <div class="dishes-card__type">Полезные статьи</div>
+                <h3 class="dishes-card__title">Конкурс рецептов «Аппетитный перекус»: итоги</h3>
+                <div class="dishes-card__date">
+                  Февраль 29, 2017
+                  |
+                  <div class="coments">0</div>
+                </div>
+                <p class="dishes-card__paragraph">Lorem ipsum dolor amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
+                <div class="dishes-card__links"><a class="dishes-card__more" href="#">Подробнее</a>
+                  <div class="socials"><a class="socials__link" href="#"><i class="fab fa-facebook-f"></i></a><a class="socials__link" href="#"><i class="fab fa-vk"></i></a><a class="socials__link" href="#"><i class="fab fa-twitter"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+              </div>
+              <div class="dishes-card"><img src="assets/img/dishes-3.jpg" alt="dishes photo">
+                <div class="dishes-card__type">Ужин</div>
+                <h3 class="dishes-card__title">Быстрые бутерброды</h3>
+                <div class="dishes-card__date">
+                  Февраль 29, 2017
+                  |
+                  <div class="coments">0</div>
+                </div>
+                <p class="dishes-card__paragraph">Neque porro dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia numquam eius modi aliquam quaerat voluptatem.</p>
+                <div class="dishes-card__links"><a class="dishes-card__more" href="#">Подробнее</a>
+                  <div class="socials"><a class="socials__link" href="#"><i class="fab fa-facebook-f"></i></a><a class="socials__link" href="#"><i class="fab fa-vk"></i></a><a class="socials__link" href="#"><i class="fab fa-twitter"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+              </div>
+              <div class="dishes-card"><img src="assets/img/dishes-4.jpg" alt="dishes photo">
+                <div class="dishes-card__type">Супы</div>
+                <h3 class="dishes-card__title">Чечевичный суп</h3>
+                <div class="dishes-card__date">
+                  Февраль 29, 2017
+                  |
+                  <div class="coments">0</div>
+                </div>
+                <p class="dishes-card__paragraph">Consectetur adipisicing elit, eiusmod tempor incididunt labore et dolore magna aliqua.</p>
+                <div class="dishes-card__links"><a class="dishes-card__more" href="#">Подробнее</a>
+                  <div class="socials"><a class="socials__link" href="#"><i class="fab fa-facebook-f"></i></a><a class="socials__link" href="#"><i class="fab fa-vk"></i></a><a class="socials__link" href="#"><i class="fab fa-twitter"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+              </div>
+              <div class="dishes-card"><img src="assets/img/dishes-5.jpg" alt="dishes photo">
+                <div class="dishes-card__type">закуски</div>
+                <h3 class="dishes-card__title">Нарезка из фруктов</h3>
+                <div class="dishes-card__date">
+                  Февраль 29, 2017
+                  |
+                  <div class="coments">0</div>
+                </div>
+                <p class="dishes-card__paragraph">Lorem ipsum dolor amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
+                <div class="dishes-card__links"><a class="dishes-card__more" href="#">Подробнее</a>
+                  <div class="socials"><a class="socials__link" href="#"><i class="fab fa-facebook-f"></i></a><a class="socials__link" href="#"><i class="fab fa-vk"></i></a><a class="socials__link" href="#"><i class="fab fa-twitter"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+              </div>
+              <div class="dishes-card"><img src="assets/img/dishes-6.jpg" alt="dishes photo">
+                <div class="dishes-card__type">Напитки</div>
+                <h3 class="dishes-card__title">Коктейль Морской Бриз (Си Бриз - Sea Breeze)</h3>
+                <div class="dishes-card__date">
+                  Февраль 29, 2017
+                  |
+                  <div class="coments">0</div>
+                </div>
+                <p class="dishes-card__paragraph">Lorem ipsum dolor amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
+                <div class="dishes-card__links"><a class="dishes-card__more" href="#">Подробнее</a>
+                  <div class="socials"><a class="socials__link" href="#"><i class="fab fa-facebook-f"></i></a><a class="socials__link" href="#"><i class="fab fa-vk"></i></a><a class="socials__link" href="#"><i class="fab fa-twitter"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+              </div>
+              <div class="dishes-card"><img src="assets/img/dishes-7.jpg" alt="dishes photo">
+                <div class="dishes-card__type">Ужин</div>
+                <h3 class="dishes-card__title">Быстрые бутерброды</h3>
+                <div class="dishes-card__date">
+                  Февраль 29, 2017
+                  |
+                  <div class="coments">3</div>
+                </div>
+                <p class="dishes-card__paragraph">Neque porro dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia numquam eius modi aliquam quaerat voluptatem.</p>
+                <div class="dishes-card__links"><a class="dishes-card__more" href="#">Подробнее</a>
+                  <div class="socials"><a class="socials__link" href="#"><i class="fab fa-facebook-f"></i></a><a class="socials__link" href="#"><i class="fab fa-vk"></i></a><a class="socials__link" href="#"><i class="fab fa-twitter"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+              </div>
+              <div class="dishes-card"><img src="assets/img/dishes-8.jpg" alt="dishes photo">
+                <div class="dishes-card__type">Супы</div>
+                <h3 class="dishes-card__title">Чечевичный суп</h3>
+                <div class="dishes-card__date">
+                  Февраль 29, 2017
+                  |
+                  <div class="coments">0</div>
+                </div>
+                <p class="dishes-card__paragraph">Consectetur adipisicing elit, eiusmod tempor incididunt labore et dolore magna aliqua.</p>
+                <div class="dishes-card__links"><a class="dishes-card__more" href="#">Подробнее</a>
+                  <div class="socials"><a class="socials__link" href="#"><i class="fab fa-facebook-f"></i></a><a class="socials__link" href="#"><i class="fab fa-vk"></i></a><a class="socials__link" href="#"><i class="fab fa-twitter"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a><a class="socials__link" href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="paginations">
+            <div class="paginations__wrapper">
+              <ul class="paginations__items">
+                <li class="paginations__item"><a class="paginations__link" href="#"><<</a></li>
+                <li class="paginations__item"><a class="paginations__link" href="#"><</a></li>
+                <li class="paginations__item"><a class="paginations__link" href="#">1</a></li>
+                <li class="paginations__item"><a class="paginations__link" href="#">2</a></li>
+                <li class="paginations__item"><a class="paginations__link" href="#">...</a></li>
+                <li class="paginations__item"><a class="paginations__link" href="#">10</a></li>
+                <li class="paginations__item"><a class="paginations__link" href="#">></a></li>
+                <li class="paginations__item"><a class="paginations__link" href="#">>></a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <aside></aside>
+      </div>
+      <section class="instagram">
+        <div class="instagram__wrapper"><a class="instagram-card" href="#"><img src="assets/img/instagram-1.jpg" alt="Photo instagram"></a><a class="instagram-card" href="#"><img src="assets/img/instagram-2.jpg" alt="Photo instagram"></a><a class="instagram-card" href="#"><img src="assets/img/instagram-2.jpg" alt="Photo instagram"></a><a class="instagram-card" href="#"><img src="assets/img/instagram-4.jpg" alt="Photo instagram"></a><a class="instagram-card" href="#"><img src="assets/img/instagram-5.jpg" alt="Photo instagram"></a></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <div class="categories">
+          <div class="categories__title">Список категорий</div>
+          <ul class="categories__items">
+            <li class="categories__item"><a class="categories__link" href="#">Салаты</a></li>
+            <li class="categories__item"><a class="categories__link" href="#">Выпечка Выпечка</a></li>
+            <li class="categories__item"><a class="categories__link" href="#">Расписание</a></li>
+            <li class="categories__item"><a class="categories__link" href="#">Цены</a></li>
+            <li class="categories__item"><a class="categories__link" href="#">Команда</a></li>
+            <li class="categories__item"><a class="categories__link" href="#">Контакты</a></li>
+            <li class="pages__item"></li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <div class="contacts__title">Контакты</div>
+          <ul class="contacts__items">
+            <li class="contacts__item"><a class="contacts__link" href="tel:+6494461709"><img class="contacts__link-icon" src="assets/img/phone.svg" alt="Phone icon">+38 050 32 45 555</a></li>
+            <li class="contacts__item"><a class="contacts__link" href="mailto:test@test.test"><img class="contacts__link-icon" src="assets/img/email.svg" alt="Email icon">mail@fitness.org</a></li>
+            <li class="contacts__item"><a class="contacts__link" href="#"><img class="contacts__link-icon" src="assets/img/marker.svg" alt="Marker icon">г. Киев, ул.Центр, дом. 1</a></li>
+          </ul>
+        </div>
+        <div class="schedule">
+          <div class="schedule__title">График работы</div>
+          <ul class="schedule__items">
+            <li class="schedule__item">Пн-Сб 9:00-22:00</li>
+            <li class="schedule__item">Вс 10:00-22:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">© 2017 Все права защищены</div>
+    </footer>
+    <!--include common/modal-->
+    <script defer src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </body>
+</html>

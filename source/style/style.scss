@@ -1,0 +1,57 @@
+@import "common/media";
+@import "common/normalize";
+
+body {
+  color: #111519;
+  font-family: "Open Sans", "Arail", sans-serif;
+  font-size: 14px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.display-hidden {
+  display: none;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+aside {
+  min-width: 308px;
+  min-height: 800px;
+  background-color: #ccc;
+}
+
+@import "common/socials";
+
+@import "common/header";
+@import "common/dishes-cards";
+@import "common/paginations";
+@import "common/instagram";
+
+@import "common/about";
+@import "common/services";
+@import "common/coach";
+@import "common/banner";
+@import "common/reviews";
+@import "common/banner--news";
+@import "common/map";
+@import "common/footer";
+@import "common/modal";

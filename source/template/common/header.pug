@@ -1,0 +1,44 @@
+header.header
+    .header__wrapper.container
+        a.logo(href="#")
+            | COOKING
+            span.logo--dark-red BLOG
+        button.header-nav__toggle
+            i.fas.fa-bars
+        nav.nav
+            ul.nav__items
+                li.nav__item
+                    a.nav__link(href="#") Главная
+                li.nav__item.dropdown
+                    button.dropdown-toggle
+                        span Рецепты
+                        .fas.fa-sort-down
+                    .dropdown-menu
+                        a.dropdown-item(href='#') Закуски
+                        a.dropdown-item.dropdown(href='#')
+                            button.dropdown-toggle О нас
+                            .dropdown-menu
+                                a.dropdown-item.nav__link(href='#') Sub Item 1
+                                a.dropdown-item.nav__link(href='#') Sub Item 2
+                                a.dropdown-item.nav__link(href='#') Sub Item 3
+                        a.dropdown-item.nav__link(href='#') Something else here
+                li.nav__item
+                    a.nav__link(href="#") Кулинарные хитрости
+                li.nav__item
+                    a.nav__link(href="#") Обо мне
+                li.nav__item
+                    a.nav__link(href="#") Контакты
+        form.search-form
+            input.search-form__input(type="text",  name="search", placeholder="Поиск ...")
+            .socials.socials--search-form
+                a.socials__link(href="#")
+                    i.fab.fa-facebook-f
+                a.socials__link(href="#")
+                    i.fab.fa-vk
+                a.socials__link(href="#")
+                    i.fab.fa-twitter
+                a.socials__link(href="#")
+                    i.fab.fa-instagram
+            div.search-form__line
+            button.search-form__button(type="submit")
+                i.fas.fa-search
