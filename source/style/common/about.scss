@@ -1,0 +1,62 @@
+.aside {
+  max-width: 308px;
+  padding: 31px 35px 35px;
+  background-color: #fff;
+}
+
+.about__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #111519;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.54px;
+}
+
+.about__rang {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #a3a4a5;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.33px;
+}
+
+.about__img {
+  width: 100%;
+}
+
+.about__paragrapg {
+  margin: 14px 0;
+  text-align: center;
+  color: #171b1f;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.42px;
+}
+
+.about__more {
+  display: block;
+  text-align: center;
+  color: #aa183c;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.42px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.about____more .fas.fa-angle-right {
+  color: #aa183c;
+}

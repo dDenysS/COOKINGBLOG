@@ -1,0 +1,117 @@
+.dishes-slide {
+  padding-top: 232px;
+  padding-bottom: 233px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ccc   url(../img/slide1.jpg) center center/cover no-repeat;
+}
+
+.dishes-slide__info {
+  display: flex;
+  justify-content: space-between;
+  min-width: 267px;
+}
+
+.comments {
+  color: #fff;
+
+  .fas.fa-comments {
+    margin-right: 4px;
+  }
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 10px 3px;
+  border: 1px solid #aa183c;
+  background-color: #aa183c;
+  opacity: 0.8;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.36px;
+}
+
+.date {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+}
+
+.dishes-slide__title {
+  font-family: "Source Sans Pro" , "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  max-width: 830px;
+  color: #fff;
+  line-height: 56px;
+  letter-spacing: 1.44px;
+  margin: 15px 0 29px;
+}
+
+.dishes-slide__more {
+  border: 2px solid #ffffff;
+  padding: 14px 64px 17px;
+  width: 95px;
+  height: 14px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.38px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #9b2540;
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-slider .swiper-pagination-bullet {
+  width: 6px;
+  margin: 0 5px;
+  height: 6px;
+  border: 1px solid #ffffff;
+  opacity: 0.6;
+  background-color: transparent;
+}
+
+.main-slider .swiper-pagination-bullet-active{
+  width: 10px;
+  opacity: 1;
+  height: 10px;
+  border: 1px solid #ffffff;
+}
+
+.main-slider .swiper-pagination {
+  bottom: 80px;
+}
+
+.main-slider .swiper-button-prev,
+.main-slider .swiper-button-next {
+  background-image: url(../img/left-arrow.svg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 16px;
+  height: 30px;
+}
+
+.swiper-button-next {
+  transform: rotate(180deg);
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px;
+}

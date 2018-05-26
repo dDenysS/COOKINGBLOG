@@ -1,0 +1,55 @@
+.popular {
+  margin-top: 46px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.popular__title {
+  text-align: center;
+  color: #111519;
+  margin-bottom: 23px;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.54px;
+}
+
+.popular__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.popular__img {
+  width: 82px;
+  height: 82px;
+  margin-right: 16px;
+}
+
+.popular__link {
+  display: block;
+  text-decoration: none;
+  color: #111519;
+
+  &:hover {
+    color: #aa183c;
+  }
+}
+
+.popular__item-title  {
+  margin-top: 0px ;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 0.42px;
+  margin-bottom: 1px;
+}
+
+.popular__date {
+  color: #111519;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.33px;
+}

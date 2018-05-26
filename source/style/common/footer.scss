@@ -3,7 +3,7 @@
 }
 
 .footer__wrapper {
-  padding-top: 53px;
+  padding-top: 42px;
   display: flex;
   justify-content: space-between;
 
@@ -15,24 +15,35 @@
   }
 }
 
-.categories__items {
+.categories {
   display: flex;
   flex-wrap: wrap;
-  max-width: 180px;
+  align-items: flex-start;
   justify-content: space-between;
+  max-width: 180px;
 }
 
 .categories__item {
-  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
+.subscription__title--footer,
+.last-posts__title,
 .categories__title {
+  text-align: left;
+  text-transform: unset;
+  margin-bottom: 21px;
+  margin-top: 0;
   color: #ffffff;
   font-family: "Source Sans Pro", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.54px;
+}
+
+.last-posts__title {
+  margin-bottom: 25px;
 }
 
 .categories__link {
@@ -47,4 +58,106 @@
   &:hover {
     color: #aa183c;
   }
+}
+
+.last-posts {
+  max-width: 300px;
+  margin-left: 88px;
+}
+
+.last-posts__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.last-posts__img {
+  margin-right: 15px;
+  width: 56px;
+  height: 42px;
+}
+
+.last-posts__date {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.18px;
+}
+
+.last-posts__link {
+  text-decoration: none;
+}
+
+.last-posts__item-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.22px;
+  &:hover {
+    color: #aa183c;
+  }
+}
+
+.last-posts__date {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.18px;
+}
+
+.subscription--footer {
+  margin-top: 0;
+  max-width: 377px;
+}
+
+.subscription__wrapper--footer {
+  padding: 0;
+  border: none;
+}
+
+.subscription__input--footer {
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 1;
+    color: #fff;
+  }
+}
+
+.subscription__paragraph {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.36px;
+}
+
+.subscription__sumbit--footer {
+  color: #fff;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: #aa183c;
+  }
+}
+
+.footer__copyright {
+  margin-top: 38px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #a3a4a5;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.33px;
 }

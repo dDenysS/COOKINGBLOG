@@ -1,3 +1,22 @@
+.instagram {
+  margin-top: 92px;
+
+  .fab.fa-instagram {
+    top: 48%;
+    left: 48%;
+    position: absolute;
+    opacity: 0;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
 .instagram__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -9,6 +28,9 @@
   height: 280px;
   position: relative;
 
+  &:hover .fab.fa-instagram {
+    opacity: 0.4;
+  }
   &:before {
     content: none;
     position: absolute;
@@ -21,5 +43,20 @@
 
   &:hover:before {
     content: "";
+  }
+}
+
+.instagram .fab.fa-instagram {
+  top: 48%;
+  left: 48%;
+  position: absolute;
+  opacity: 0;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+
+  &:hover {
+    opacity: 1;
   }
 }

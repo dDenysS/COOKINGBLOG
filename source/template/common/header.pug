@@ -14,14 +14,23 @@ header.header
                         span Рецепты
                         .fas.fa-sort-down
                     .dropdown-menu
-                        a.dropdown-item(href='#') Закуски
+                        a.dropdown-item.nav__link(href='#') Закуски
                         a.dropdown-item.dropdown(href='#')
-                            button.dropdown-toggle О нас
+                            button.nav__link.dropdown-toggle
+                                span Салаты
+                                .fas.fa-sort-right
                             .dropdown-menu
                                 a.dropdown-item.nav__link(href='#') Sub Item 1
                                 a.dropdown-item.nav__link(href='#') Sub Item 2
                                 a.dropdown-item.nav__link(href='#') Sub Item 3
-                        a.dropdown-item.nav__link(href='#') Something else here
+                        a.dropdown-item.dropdown(href='#')
+                            button.nav__link.dropdown-toggle Десерты
+                            .dropdown-menu
+                                a.dropdown-item.nav__link(href='#') Sub Item 1
+                                a.dropdown-item.nav__link(href='#') Sub Item 2
+                                a.dropdown-item.nav__link(href='#') Sub Item 3
+                        a.dropdown-item.nav__link(href='#') Напитки
+                        a.dropdown-item.nav__link(href='#') Соусы
                 li.nav__item
                     a.nav__link(href="#") Кулинарные хитрости
                 li.nav__item

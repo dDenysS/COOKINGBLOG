@@ -6,35 +6,43 @@ footer.footer
                 li.categories__item
                     a(href="#").categories__link Салаты
                 li.categories__item
-                    a(href="#").categories__link Выпечка Выпечка
+                    a(href="#").categories__link Супы
                 li.categories__item
-                    a(href="#").categories__link Расписание
+                    a(href="#").categories__link Десерты
                 li.categories__item
-                    a(href="#").categories__link Цены
-                li.categories__item
-                    a(href="#").categories__link Команда
-                li.categories__item
-                    a(href="#").categories__link Контакты
+                    a(href="#").categories__link Напитки
                 li.pages__item
-
-        .contacts
-            .contacts__title Контакты
-            ul.contacts__items
-                li.contacts__item
-                    a(href="tel:+6494461709").contacts__link
-                        img.contacts__link-icon(src="assets/img/phone.svg", alt="Phone icon")
-                        |+38 050 32 45 555
-                li.contacts__item
-                    a(href="mailto:test@test.test").contacts__link
-                        img.contacts__link-icon(src="assets/img/email.svg", alt="Email icon")
-                        |mail@fitness.org
-                li.contacts__item
-                    a(href="#").contacts__link
-                        img.contacts__link-icon(src="assets/img/marker.svg", alt="Marker icon")
-                        |г. Киев, ул.Центр, дом. 1
-        div.schedule
-            .schedule__title График работы
-            ul.schedule__items
-                li.schedule__item Пн-Сб 9:00-22:00
-                li.schedule__item Вс 10:00-22:00
-    .footer__copyright © 2017 Все права защищены
+            ul.categories__items
+                li.categories__item
+                    a(href="#").categories__link Выпечка
+                li.categories__item
+                    a(href="#").categories__link Закуски
+                li.categories__item
+                    a(href="#").categories__link Соусы
+                li.categories__item
+                    a(href="#").categories__link Закатки
+        .last-posts
+            h2.last-posts__title Последние посты
+            ul.last-posts__items
+                li.last-posts__item
+                    img.last-posts__img(src="assets/img/last-post-1.jpg", alt="Dishes photo")
+                    .last-posts_content
+                        a.last-posts__link( href="#")
+                            h4.last-posts__item-title Брокколи в горчичном соусе
+                        .last-posts__date Ноябрь 12, 2017
+                li.last-posts__item
+                    img.last-posts__img(src="assets/img/last-post-2.jpg", alt="Dishes photo")
+                    .last-posts__content
+                        a.last-posts__link( href="#")
+                            h4.last-posts__item-title Брокколи в горчичном соусе
+                        .last-posts__date Ноябрь 12, 2017
+        .subscription.subscription--footer
+            .subscription__wrapper.subscription__wrapper--footer
+                h3.subscription__title.subscription__title--footer подписка на новости
+                p.subscription__paragraph Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, tempora incidunt.
+                form.subscription__form
+                    input.subscription__input.subscription__input--footer(type="email", name="email", placeholder="Ваша электронная почта ...")
+                    button.subscription__sumbit.subscription__sumbit--footer(type="submit")
+                        .vertical-line
+                        i.fas.fa-envelope
+    .footer__copyright Copyright © 2017. Все права защищены

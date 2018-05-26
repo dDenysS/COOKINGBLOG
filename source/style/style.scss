@@ -18,6 +18,10 @@ img {
   max-width: 100%;
 }
 
+.main {
+  background: #fff url(../img/main-bg.jpg) top left repeat;
+}
+
 .display-hidden {
   display: none;
 }
@@ -30,28 +34,25 @@ img {
 
 .main__wrapper {
   display: flex;
+  padding-top: 40px;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
-aside {
-  min-width: 308px;
-  min-height: 800px;
-  background-color: #ccc;
+.content {
+  max-width: 774px;
 }
 
 @import "common/socials";
 
 @import "common/header";
+@import "common/slider";
+@import "common/about";
+@import "common/subscription1";
+@import "common/popular";
+@import "common/tags";
 @import "common/dishes-cards";
 @import "common/paginations";
 @import "common/instagram";
 
-@import "common/about";
-@import "common/services";
-@import "common/coach";
-@import "common/banner";
-@import "common/reviews";
-@import "common/banner--news";
-@import "common/map";
 @import "common/footer";
-@import "common/modal";

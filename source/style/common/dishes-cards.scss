@@ -1,22 +1,54 @@
 .dishes-cards__wrapper {
   display: flex;
   flex-wrap: wrap;
+
+  .socials__link {
+    font-size: 10px;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .dishes-card {
+  background-color: #fff;
   max-width: 378px;
   margin-right: 18px;
+  margin-bottom: 35px;
+  padding-bottom: 24px;
 
   &:hover {
     box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.18);
   }
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     margin-right: 0;
   }
+
 }
 
+.dishes-card--big {
+  max-width: 774px;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+.dishes-card__img--big {
+  margin-top: 16px;
+
+}
+
+.socials__link--big-card {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+
 .dishes-card__type {
+  margin-top: 23px;
   color: #aa183c;
   font-size: 12px;
   font-weight: 400;
@@ -27,16 +59,19 @@
 
 .dishes-card__title {
   color: #111519;
-  font-family: "Source Sans Pro","Arial",sans-serif;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 36px;
   letter-spacing: 0.8px;
   text-align: center;
+  margin-bottom: 14px;
+  line-height: 27px;
+  margin-top: 5px;
 }
 
-.dishes-card__date {
-  text-align: center;
+.dishes-card__info  {
+  display: flex;
+  justify-content: center;
   color: #5e6061;
   font-size: 11px;
   font-weight: 300;
@@ -44,17 +79,37 @@
   letter-spacing: 0.33px;
 }
 
+.dishes-card__line {
+  margin-right: 20px;
+  width: 1px;
+  height: 10px;
+  background-color: #e5e5e5
+}
+
 .dishes-card__paragraph {
-  margin: 16px 0;
+  margin: 16px 0 19px;
   color: #171b1f;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.42px;
 }
+
+.dishes-card__paragraph--big {
+  margin-bottom: 19px;
+}
+
 .dishes-card__links {
   display: flex;
   justify-content: space-between;
+}
+
+.dishes-card__comments {
+  color: #5e6061;
+
+  .fas.fa-comments {
+    margin-right: 6px;
+  }
 }
 
 .dishes-card__more {
@@ -65,4 +120,22 @@
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.42px;
+  text-decoration: none;
+
+  .fas.fa-angle-right {
+    color: #aa183c;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.dishes-card__type,
+.dishes-card__title,
+.dishes-card__info,
+.dishes-card__paragraph,
+.dishes-card__links {
+  padding-left: 25px;
+  padding-right: 25px;
 }
