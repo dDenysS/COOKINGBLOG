@@ -6,7 +6,7 @@
 
   @include media(650) {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 

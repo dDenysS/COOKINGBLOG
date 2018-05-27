@@ -1,14 +1,14 @@
 $(() => {
     new Swiper('.main-slider', {
         autoplay: {
-            delay: 5000,
+            delay: 5000
         },
         pagination: {
-            el: '.swiper-pagination',
+            el: '.swiper-pagination'
         },
         navigation: {
             nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            prevEl: '.swiper-button-prev'
         }
     });
 });

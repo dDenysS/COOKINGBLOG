@@ -125,7 +125,7 @@
 
 .main-slider .swiper-button-next {
   right: 8.3%;
-  left: unset;
+  left: auto;
   transform: rotate(180deg);
 
   @include media(1100) {
