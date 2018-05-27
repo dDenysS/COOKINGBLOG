@@ -10,9 +10,6 @@
   @include media(918) {
     flex-wrap: wrap;
   }
-  @include media(670) {
-    justify-content: center;
-  }
 }
 
 .categories {
@@ -21,6 +18,10 @@
   align-items: flex-start;
   justify-content: space-between;
   max-width: 180px;
+
+  @include media(670) {
+    margin-right: 15px;
+  }
 }
 
 .categories__item {
@@ -41,6 +42,7 @@
   line-height: 20px;
   letter-spacing: 0.54px;
 }
+
 
 .last-posts__title {
   margin-bottom: 25px;
@@ -63,6 +65,10 @@
 .last-posts {
   max-width: 300px;
   margin-left: 88px;
+  @include media(670) {
+    margin-left: 0;
+    margin-top: 15px;
+  }
 }
 
 .last-posts__item {
@@ -111,6 +117,11 @@
 .subscription--footer {
   margin-top: 0;
   max-width: 377px;
+
+  @include media(410) {
+    min-width: unset;
+    width: 100%;
+  }
 }
 
 .subscription__wrapper--footer {

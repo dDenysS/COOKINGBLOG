@@ -1,7 +1,13 @@
 .header__wrapper {
   display: flex;
   align-items: center;
-  padding: 17px 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  @include media(650) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .logo {
@@ -13,14 +19,75 @@
   text-transform: uppercase;
   letter-spacing: 0.68px;
   margin-right: 55px;
+  @include media(500) {
+    margin-right: 10px;
+  }
 }
 
-.header-nav__toggle {
-  display: none;
+.nav-close-button,
+.nav-open-button {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  padding: 5px;
+
+  &:hover {
+    color: #aa183c;
+    cursor: pointer;
+  }
+  @include media(1154) {
+    visibility: visible;
+    position: static;
+    left: auto;
+  }
+}
+
+.nav-close-button {
+  position: fixed;
+  background-color: #fff;
+  top: 18px;
+  right: 12px;
 }
 
 .logo--dark-red {
   color: #aa183c;
+}
+
+.nav {
+  @include media(1154) {
+    display: none;
+  }
+}
+
+.nav.active {
+  background-color: rgba(#fff, 0.8);
+  z-index: 20;
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .nav__items {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav__item {
+    margin-right: 0;
+  }
+
+  .dropdown-menu {
+    top: 28px;
+    left: -50px;
+  }
 }
 
 .nav__items {
@@ -58,6 +125,13 @@
   }
 }
 
+.dropdown-toggle--sub {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .dropdown-toggle {
   display: flex;
 
@@ -76,7 +150,7 @@
 }
 
 .dropdown-menu {
-  z-index:10;
+  z-index: 10;
   min-width: 141px;
   display: none;
   flex-direction: column;
@@ -86,14 +160,15 @@
   top: 52px;
   left: 0;
   padding: 25px 15px 25px 25px;
-
-  .dropdown-menu {
-    display: none;
-  }
 }
 
 .dropdown-menu.active {
   display: flex;
+}
+
+.dropdown-menu--sub {
+  left: 111%;
+  top: 0;
 }
 
 .search-form {
@@ -101,6 +176,10 @@
   display: flex;
   align-items: flex-start;
   position: relative;
+
+  @include media(500) {
+    margin-top: 15px;
+  }
 }
 
 .search-form__input {
@@ -111,7 +190,7 @@
   font-family: "Source Sans Pro", "Arial", sans-serif;
   font-weight: 300;
   letter-spacing: 0.42px;
-  border:none;
+  border: none;
   border-bottom: 1px solid #000000;
   opacity: 0.2;
 
@@ -122,7 +201,7 @@
   &:focus {
     opacity: 1;
     color: #171b1f;
-    }
+  }
 }
 
 .search-form__input.active {

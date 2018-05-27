@@ -3,9 +3,11 @@ header.header
         a.logo(href="#")
             | COOKING
             span.logo--dark-red BLOG
-        button.header-nav__toggle
+        button.nav-open-button
             i.fas.fa-bars
         nav.nav
+            button.nav-close-button
+                i.fas.fa-times
             ul.nav__items
                 li.nav__item
                     a.nav__link(href="#") Главная
@@ -15,17 +17,19 @@ header.header
                         .fas.fa-sort-down
                     .dropdown-menu
                         a.dropdown-item.nav__link(href='#') Закуски
-                        a.dropdown-item.dropdown(href='#')
-                            button.nav__link.dropdown-toggle
-                                span Салаты
-                                .fas.fa-sort-right
-                            .dropdown-menu
-                                a.dropdown-item.nav__link(href='#') Sub Item 1
-                                a.dropdown-item.nav__link(href='#') Sub Item 2
-                                a.dropdown-item.nav__link(href='#') Sub Item 3
-                        a.dropdown-item.dropdown(href='#')
-                            button.nav__link.dropdown-toggle Десерты
-                            .dropdown-menu
+                        .dropdown-item.dropdown
+                                button.nav__link.dropdown-toggle.dropdown-toggle--sub
+                                    span Салаты
+                                    i.fas.fa-caret-right
+                                div.dropdown-menu.dropdown-menu--sub
+                                    a.dropdown-item.nav__link(href='#') Sub Item 1
+                                    a.dropdown-item.nav__link(href='#') Sub Item 2
+                                    a.dropdown-item.nav__link(href='#') Sub Item 3
+                        .dropdown-item.dropdown
+                            button.nav__link.dropdown-toggle.dropdown-toggle--sub
+                                span Десерты
+                                i.fas.fa-caret-right
+                            .dropdown-menu.dropdown-menu--sub
                                 a.dropdown-item.nav__link(href='#') Sub Item 1
                                 a.dropdown-item.nav__link(href='#') Sub Item 2
                                 a.dropdown-item.nav__link(href='#') Sub Item 3

@@ -3,11 +3,16 @@
   background-color: #fff;
   padding-top: 30px;
   padding-bottom: 30px;
+
 }
 
 .pagination__items {
   display: flex;
   justify-content: center;
+
+  @include media(490) {
+    flex-wrap: wrap;
+  }
 }
 
 .pagination__item {
@@ -30,6 +35,10 @@
   font-weight: 400;
   letter-spacing: 0.45px;
   border: 1px solid #a3a4a5;
+
+  @include media(490) {
+    margin-bottom: 10px;
+  }
 
   &.active,
   &:hover {

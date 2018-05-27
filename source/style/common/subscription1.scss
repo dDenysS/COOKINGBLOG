@@ -1,5 +1,15 @@
 .subscription {
   margin-top: 48px;
+
+  @include media(901) {
+    width: 50%;
+    min-width: 300px;
+  }
+
+  @include media(320) {
+    width: 100%;
+    min-width: unset;
+  }
 }
 
 .subscription__wrapper {

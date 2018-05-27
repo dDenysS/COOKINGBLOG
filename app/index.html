@@ -13,21 +13,25 @@
   <body>
     <header class="header">
       <div class="header__wrapper container"><a class="logo" href="#">COOKING<span class="logo--dark-red">BLOG</span></a>
-        <button class="header-nav__toggle"><i class="fas fa-bars"></i></button>
+        <button class="nav-open-button"><i class="fas fa-bars"></i></button>
         <nav class="nav">
+          <button class="nav-close-button"><i class="fas fa-times"></i></button>
           <ul class="nav__items">
             <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
             <li class="nav__item dropdown">
               <button class="dropdown-toggle"><span>Рецепты</span>
                 <div class="fas fa-sort-down"></div>
               </button>
-              <div class="dropdown-menu"><a class="dropdown-item nav__link" href="#">Закуски</a><a class="dropdown-item dropdown" href="#">
-                  <button class="nav__link dropdown-toggle"><span>Салаты</span>
-                    <div class="fas fa-sort-right"></div>
-                  </button>
-                  <div class="dropdown-menu"><a class="dropdown-item nav__link" href="#">Sub Item 1</a><a class="dropdown-item nav__link" href="#">Sub Item 2</a><a class="dropdown-item nav__link" href="#">Sub Item 3</a></div></a><a class="dropdown-item dropdown" href="#">
-                  <button class="nav__link dropdown-toggle">Десерты</button>
-                  <div class="dropdown-menu"><a class="dropdown-item nav__link" href="#">Sub Item 1</a><a class="dropdown-item nav__link" href="#">Sub Item 2</a><a class="dropdown-item nav__link" href="#">Sub Item 3</a></div></a><a class="dropdown-item nav__link" href="#">Напитки</a><a class="dropdown-item nav__link" href="#">Соусы</a></div>
+              <div class="dropdown-menu"><a class="dropdown-item nav__link" href="#">Закуски</a>
+                <div class="dropdown-item dropdown">
+                  <button class="nav__link dropdown-toggle dropdown-toggle--sub"><span>Салаты</span><i class="fas fa-caret-right"></i></button>
+                  <div class="dropdown-menu dropdown-menu--sub"><a class="dropdown-item nav__link" href="#">Sub Item 1</a><a class="dropdown-item nav__link" href="#">Sub Item 2</a><a class="dropdown-item nav__link" href="#">Sub Item 3</a></div>
+                </div>
+                <div class="dropdown-item dropdown">
+                  <button class="nav__link dropdown-toggle dropdown-toggle--sub"><span>Десерты</span><i class="fas fa-caret-right"></i></button>
+                  <div class="dropdown-menu dropdown-menu--sub"><a class="dropdown-item nav__link" href="#">Sub Item 1</a><a class="dropdown-item nav__link" href="#">Sub Item 2</a><a class="dropdown-item nav__link" href="#">Sub Item 3</a></div>
+                </div><a class="dropdown-item nav__link" href="#">Напитки</a><a class="dropdown-item nav__link" href="#">Соусы</a>
+              </div>
             </li>
             <li class="nav__item"><a class="nav__link" href="#">Кулинарные хитрости</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Обо мне</a></li>
@@ -81,9 +85,9 @@
               <div class="dishes-card dishes-card--big">
                 <div class="dishes-card__type">Полезные статьи</div>
                 <h3 class="dishes-card__title">Картофельный салат с салями</h3>
-                <div class="dishes-card__info">
-                  <div class="date">Февраль 29, 2017</div>|
-                  <div class="dishes-card__comments"><i class="fas fa-comments"></i>0</div>
+                <div class="dishes-card__info">Февраль 29, 2017
+                  <div class="dishes-card__line"></div>
+                  <div class="dishes-card__comments"><i class="fas fa-comments"></i>3</div>
                 </div><img class="dishes-card__img--big" src="assets/img/dishes-big-card.jpg" alt="dishes photo">
                 <p class="dishes-card__paragraph dishes-card__paragraph--big">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                 <div class="dishes-card__links"><a class="dishes-card__more" href="#">Подробнее
@@ -268,7 +272,7 @@
         </aside>
       </div>
       <section class="instagram">
-        <div class="instagram__wrapper"><a class="instagram-card" href="#"><i class="fab fa-instagram"></i><img src="assets/img/instagram-1.jpg" alt="Photo instagram"></a><a class="instagram-card" href="#"><i class="fab fa-instagram"></i><img src="assets/img/instagram-2.jpg" alt="Photo instagram"></a><a class="instagram-card" href="#"><i class="fab fa-instagram"></i><img src="assets/img/instagram-2.jpg" alt="Photo instagram"></a><a class="instagram-card" href="#"><i class="fab fa-instagram"></i><img src="assets/img/instagram-4.jpg" alt="Photo instagram"></a><a class="instagram-card" href="#"><i class="fab fa-instagram"></i><img src="assets/img/instagram-5.jpg" alt="Photo instagram"></a></div>
+        <div class="instagram__wrapper"><a class="instagram-card" href="#"><i class="fab fa-instagram"></i><img src="assets/img/instagram-1.jpg" alt="Photo instagram"></a><a class="instagram-card" href="#"><i class="fab fa-instagram"></i><img src="assets/img/instagram-2.jpg" alt="Photo instagram"></a><a class="instagram-card" href="#"><i class="fab fa-instagram"></i><img src="assets/img/instagram-3.jpg" alt="Photo instagram"></a><a class="instagram-card" href="#"><i class="fab fa-instagram"></i><img src="assets/img/instagram-4.jpg" alt="Photo instagram"></a><a class="instagram-card" href="#"><i class="fab fa-instagram"></i><img src="assets/img/instagram-5.jpg" alt="Photo instagram"></a></div>
       </section>
     </main>
     <footer class="footer">
@@ -308,7 +312,7 @@
         </div>
         <div class="subscription subscription--footer">
           <div class="subscription__wrapper subscription__wrapper--footer">
-            <h3 class="subscription__title subscription__title--footer">подписка на новости</h3>
+            <h3 class="subscription__title subscription__title--footer">Подписка на новости</h3>
             <p class="subscription__paragraph">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, tempora incidunt.</p>
             <form class="subscription__form">
               <input class="subscription__input subscription__input--footer" type="email" name="email" placeholder="Ваша электронная почта ...">

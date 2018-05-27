@@ -37,6 +37,10 @@ img {
   padding-top: 40px;
   justify-content: space-between;
   align-items: flex-start;
+
+  @include media(900) {
+    flex-wrap: wrap;
+  }
 }
 
 .content {

@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #ccc   url(../img/slide1.jpg) center center/cover no-repeat;
+  background: #ccc url(../img/slide1.jpg) center center/cover no-repeat;
 }
 
 .dishes-slide__info {
@@ -45,7 +45,7 @@
 }
 
 .dishes-slide__title {
-  font-family: "Source Sans Pro" , "Arial", sans-serif;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
   font-size: 48px;
   font-weight: 400;
   max-width: 830px;
@@ -53,6 +53,11 @@
   line-height: 56px;
   letter-spacing: 1.44px;
   margin: 15px 0 29px;
+
+  @include media(1100) {
+    max-width: 82%;
+    font-size: 35px;
+  }
 }
 
 .dishes-slide__more {
@@ -88,7 +93,7 @@
   background-color: transparent;
 }
 
-.main-slider .swiper-pagination-bullet-active{
+.main-slider .swiper-pagination-bullet-active {
   width: 10px;
   opacity: 1;
   height: 10px;
@@ -106,12 +111,32 @@
   background-size: cover;
   width: 16px;
   height: 30px;
+  left: 8.3%;
+  top: 51%;
+
+  @include media(1100) {
+    left: 5%;
+  }
+
+  @include media(400) {
+    left: 2%;
+  }
 }
 
-.swiper-button-next {
+.main-slider .swiper-button-next {
+  right: 8.3%;
+  left: unset;
   transform: rotate(180deg);
+
+  @include media(1100) {
+    right: 5%;
+  }
+
+  @include media(400) {
+    right: 2%;
+  }
 }
 
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 6px;
 }

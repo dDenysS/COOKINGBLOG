@@ -2,6 +2,10 @@
   margin-top: 46px;
   padding-bottom: 18px;
   border-bottom: 1px solid #ebebeb;
+
+  @include media(901) {
+    width: 100%;
+  }
 }
 
 .popular__title {

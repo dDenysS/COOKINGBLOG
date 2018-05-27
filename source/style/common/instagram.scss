@@ -24,10 +24,19 @@
 }
 
 .instagram-card {
-  width: 280px;
-  height: 280px;
+  width: 20%;
+  height: auto;
   position: relative;
 
+  @include media(500) {
+    padding: 20px;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    max-height: 100%;
+  }
   &:hover .fab.fa-instagram {
     opacity: 0.4;
   }

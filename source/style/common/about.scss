@@ -2,6 +2,28 @@
   max-width: 308px;
   padding: 31px 35px 35px;
   background-color: #fff;
+
+  @include media(901) {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  @include media(721) {
+    justify-content: center;
+  }
+
+  @include media(401) {
+    padding: 0;
+  }
+}
+
+.about {
+  @include media(901) {
+    max-width: 308px;
+  }
 }
 
 .about__title {
